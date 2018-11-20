@@ -28,6 +28,7 @@ public class AdController {
     @RequestMapping("/remove")
     public String remove(Ad ad){
         //得到id根据id做删除
+        System.out.println(ad);
         return "";
     }
 
