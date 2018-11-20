@@ -24,7 +24,8 @@ function modifyInit(id) {
 /**
  * 报表打印
  */
+/*
 function downExel() {
     window.location.href=$("#basePath").val() + "/ad/downExcel";
 
-}
+}*/

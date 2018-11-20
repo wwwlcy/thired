@@ -1,9 +1,10 @@
 package org.imooc.dao;
 
 import org.imooc.bean.Menu;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository
 public interface MenuDao {
 	
 	/**

@@ -3,5 +3,14 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.imooc.dao.AdDao">
-
+    <select id="selectAds" resultMap="AdMap">
+        SELECT * FROM ad;
+    </select>
+    <resultMap id="AdMap" type="Ad">
+        <id column="id" property="id" />
+        <id column="title" property="title" />
+        <id column="img_file_name" property="imgFileName" />
+        <id column="link" property="link" />
+        <id column="weight" property="weight" />
+    </resultMap>
 </mapper>

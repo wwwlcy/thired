@@ -1,9 +1,10 @@
 package org.imooc.dao;
 
 import org.imooc.bean.GroupAction;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository
 public interface GroupActionDao {
 	/**
 	 * 根据用户组主键，删除用户组与动作之间的关联关系

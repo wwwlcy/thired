@@ -14,6 +14,16 @@
 		<script type="text/javascript" src="${basePath}/js/common/common.js"></script>
 		<script type="text/javascript" src="${basePath}/js/content/adList.js"></script>
 	</head>
+	<script type="text/javascript">
+        $(function () {
+			$("#downExcel").click(function () {
+                $.post("/ad/downExcel", function(result) {
+                    // 请求处理
+					alert(result);
+                },"text");
+            });
+        });
+	</script>
 	<body style="background: #e1e9eb;">
 		<form action="${basePath}/ad/search" id="mainForm" method="post">
 			<input type="hidden" id="id" name="id"/>
@@ -39,13 +49,15 @@
 
 	                            </td>
 								<td style="text-align: right;" width="150">
-									<input type="button" class="tabSub" value="下载" onclick="downExel()"/>
+									<input type="button" class="tabSub" value="下载" id="downExcel"/>
+									<input type="hidden" value="${jsonString}" id="duwned"/>
+									${jsonString}
 								</td>
 	       					</tr>
 						</tbody>
 					</table>
 					<div class="zixun fix">
-						<table class="tab2" width="100%">
+						<table class="tab2" width="100%" id="table1">
 							<tbody>
 								<tr>
 								    <th>序号</th>

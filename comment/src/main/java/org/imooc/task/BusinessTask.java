@@ -24,6 +24,8 @@ public class BusinessTask {
 	
 	@Resource
 	private BusinessDao businessDao;
+
+	//private BusinessDao businessDao;
 	
 	@Resource
 	private SysParamDao sysParamDao;

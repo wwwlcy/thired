@@ -17,4 +17,18 @@ import java.util.List;
 
 @Service
 public class AdServiceImpl implements AdService {
+
+    @Autowired
+    AdDao adDao;
+
+    @Override
+    public List<AdDto> searchByPage(AdDto adDto) {
+        return null;
+    }
+
+    @Override
+    public List<Ad> selectAllAd() {
+        List<Ad> list = adDao.selectAds();
+        return list;
+    }
 }

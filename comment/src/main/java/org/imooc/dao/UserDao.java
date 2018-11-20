@@ -1,9 +1,10 @@
 package org.imooc.dao;
 
 import org.imooc.bean.User;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository
 public interface UserDao {
 
     /**

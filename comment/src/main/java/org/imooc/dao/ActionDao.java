@@ -1,7 +1,9 @@
 package org.imooc.dao;
 
 import org.imooc.bean.Action;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface ActionDao {
 	
 	/**

@@ -1,9 +1,10 @@
 package org.imooc.dao;
 
 import org.imooc.bean.Orders;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository
 public interface OrdersDao {
 	
 	/**

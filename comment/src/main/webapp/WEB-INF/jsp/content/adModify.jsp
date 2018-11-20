@@ -16,7 +16,7 @@
 	</head>
 	<body style="background: #e1e9eb;">
 		<form id="mainForm" method="post" action="${basePath}/ad/modify" enctype="multipart/form-data">
-			<input type="hidden" name="id" value="${modifyObj.id}"/>
+			<input type="hidden" id="id" name="id" value="${modifyObj.id}"/>
 			<input type="hidden" id="message" value="${pageCode.msg}"/>
 			<input type="hidden" id="basePath" value="${basePath}"/>
 			<div class="right">

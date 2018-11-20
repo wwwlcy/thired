@@ -20,4 +20,13 @@ import java.util.List;
 
 @Service
 public class BusinessServiceImpl implements BusinessService {
+    @Override
+    public BusinessListDto searchByPageForApi(BusinessDto businessDto) {
+        return null;
+    }
+
+    @Override
+    public BusinessDto getById(Long id) {
+        return null;
+    }
 }
